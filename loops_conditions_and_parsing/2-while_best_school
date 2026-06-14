@@ -3,7 +3,7 @@
 num=10 
 while [ $num -gt 0 ] 
 do 
-    echo "Best school" 
+    echo "Best School" 
     num=$((num - 1)) 
 
 done 
