@@ -1,5 +1,2 @@
 #!/usr/bin/env bash
-# shellcheck shell=bash
-# Lists all .gif files in current directory and subdirectories, sorted case-insensitively without extensions
-
-find . -type f -name "*.gif" | awk -F/ '{print $NF}' | sed 's/\.gif$//' | sort -fi
+find . -type f -name "*.gif" | sed 's/.*\///;s/\.gif$//' | sort -fi
