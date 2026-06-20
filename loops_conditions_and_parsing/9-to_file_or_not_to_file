@@ -3,5 +3,7 @@
 # Displays content of current directory in list format, showing only the part after the first dash
 
 for file in *; do
-    echo "${file#*-}"
+    if [[ "$file" != .* ]]; then
+        echo "${file#*-}"
+    fi
 done
