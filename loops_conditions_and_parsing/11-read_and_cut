@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+# shellcheck shell=bash
+# Displays username, user id, and home directory from /etc/passwd
+
+while IFS=: read -r username _ uid _ _ homedir _; do
+    echo "username: $username"
+    echo "user id: $uid"
+    echo "home directory: $homedir"
+done < /etc/passwd
