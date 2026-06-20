@@ -1,12 +1,12 @@
 #!/usr/bin/env bash
-# shellcheck shell=bash
-# Displays "Best School" 10 times, with "Hi" printed after the 9th iteration
-
+# Displays "Best School" 10 times; on the 9th iteration also prints "Hi".
 i=1
-while [ $i -le 10 ]; do
+while [ $i -le 10 ]
+do
     echo "Best School"
-    if [ $i -eq 9 ]; then
+    if [ $i -eq 9 ]
+    then
         echo "Hi"
     fi
-    ((i++))
+    i=$((i + 1))
 done

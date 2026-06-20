@@ -1,9 +1,8 @@
 #!/usr/bin/env bash
-# shellcheck disable=SC2034
-num=10 
-while [ $num -gt 0 ] 
-do 
-    echo "Best School" 
-    num=$((num - 1)) 
-
-done 
+# Prints "Best School" 10 times using a while loop.
+i=0
+while [ $i -lt 10 ]
+do
+    echo "Best School"
+    i=$((i + 1))
+done
