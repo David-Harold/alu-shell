@@ -1,0 +1,2 @@
+#!/bin/bash
+echo $(python3 -c "w='water';s='stir.';b='bestchol';f=lambda n,a:sum(a.index(c)*len(a)**i for i,c in enumerate(n[::-1]));t=lambda n,a:(t(n//len(a),a)+a[n%len(a)]) if n else '';total=f('$WATER',w)+f('$STIR',s);print(t(total,b) or b[0])")
